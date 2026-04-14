@@ -1304,8 +1304,8 @@
             opacity: 0;
         }
         .pricing-card h2 { 
-            color: #0b1630; 
-            font-size: 26px; 
+            color: #ffffff; 
+            font-size: 55px; 
             font-weight: 800; 
             margin-bottom: 8px;
             font-family: 'Cormorant Garamond', serif;
@@ -3909,6 +3909,73 @@
             }
             .foot-logo span {
                 font-size: 24px;
+            }
+        }
+
+        /* ===== COMPARE CHART FINAL RESPONSIVE FIX ===== */
+        @media (max-width: 480px) {
+            .tax-compare-plot {
+                grid-template-columns: 1fr !important;
+                gap: 8px;
+            }
+            .y-axis-title {
+                writing-mode: horizontal-tb !important;
+                transform: none !important;
+                text-align: left;
+                font-size: 12px !important;
+                margin-left: 2px;
+            }
+            .plot-right {
+                height: 200px !important;
+                padding: 10px 0 46px !important;
+            }
+            .y-guides {
+                top: 10px !important;
+                bottom: 46px !important;
+            }
+            .y-guide span {
+                left: 2px !important;
+                top: -8px !important;
+                font-size: 10px !important;
+                background: #fff;
+                padding: 0 4px;
+                border-radius: 4px;
+            }
+            .compare .bar-chart {
+                gap: 8px !important;
+            }
+            .compare .bar-wrap {
+                height: calc(100% - 34px) !important;
+            }
+            .compare .bar {
+                width: 100% !important;
+                max-width: none !important;
+                border-radius: 8px 8px 0 0;
+            }
+            .compare .bar-name {
+                font-size: 10px !important;
+                line-height: 1.2;
+                min-height: 24px;
+                margin-top: 6px !important;
+                white-space: normal;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .plot-right {
+                height: 176px !important;
+                padding-bottom: 42px !important;
+            }
+            .y-guides {
+                bottom: 42px !important;
+            }
+            .compare .bar-chart {
+                gap: 6px !important;
+            }
+            .compare .bar-name {
+                font-size: 9px !important;
+                min-height: 22px;
             }
         }
     </style>
